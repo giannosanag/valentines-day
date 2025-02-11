@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #fff0f6;
+  font-family: "Protest Riot", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0); /* Start at the original position */
+  }
+  50% {
+    transform: translateY(-20px); /* Jump up */
+  }
+  100% {
+    transform: translateY(0); /* Return to the original position */
+  }
+}
+
+.cat-img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+} 
+
+.title {
+  font-family: 'Pacifico', cursive;
+  font-size: 4rem; /* Increased font size */
+  color: #ff6b6b;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Optional: Add a shadow */
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1rem;
+}
+
+.btn {
+  padding: 1.5rem 2.5rem;
+  border: none;
+  border-radius: 4px;
+
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn--yes {
+  background-color: #40c057;
+}
+
+.btn--no {
+  background-color: #f03e3e;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadeBeat {
+  0% {
+    background-color: #f9d1d1; /* Initial color */
+  }
+  50% {
+    background-color: #ff6b6b; /* Mid color */
+  }
+  100% {
+    background-color: #f9d1d1; /* Back to initial color */
+  }
+}
+
+.beat {
+  animation: fadeBeat 0.6s ease-in-out; /* Match the beat interval */
+}
