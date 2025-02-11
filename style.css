@@ -9,8 +9,13 @@ html {
 }
 
 body {
-  background-color: #fff0f6;
   font-family: "Protest Riot", sans-serif;
+  background-color: #f9d1d1;
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Removes default margin */
 }
 
 .container {
