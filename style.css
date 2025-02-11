@@ -14,12 +14,13 @@ body {
 }
 
 .container {
+  height: 100vh;
+  margin: 0 auto;
+
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centers children horizontally */
-  justify-content: center; /* Centers children vertically */
-  max-width: 90%;
-  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
 }
 
 @keyframes jump {
@@ -43,13 +44,12 @@ body {
 
 .title {
   font-family: 'Pacifico', cursive;
-  font-size: 4rem;
+  font-size: 4rem; /* Increased font size */
   color: #ff6b6b;
   margin-bottom: 20px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  text-align: center; /* Centers text horizontally */
-  width: 100%; /* Ensures the title takes up the full width of its container */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Optional: Add a shadow */
 }
+
 .buttons {
   display: flex;
   flex-wrap: wrap;
