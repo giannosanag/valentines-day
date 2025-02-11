@@ -9,22 +9,17 @@ html {
 }
 
 body {
+  background-color: #fff0f6;
   font-family: "Protest Riot", sans-serif;
-  background-color: #f9d1d1;
-  display: flex;
-  justify-content: center; /* Centers horizontally */
-  align-items: center; /* Centers vertically */
-  height: 100vh; /* Full viewport height */
-  margin: 0; /* Removes default margin */
 }
 
 .container {
-  text-align: center; /* Centers text horizontally */
-  max-width: 90%; /* Prevents the container from becoming too wide */
-  margin: 0 auto; /* Centers the container horizontally */
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centers children vertically */
+  align-items: center; /* Centers children horizontally */
+  justify-content: center; /* Centers children vertically */
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 @keyframes jump {
@@ -52,7 +47,8 @@ body {
   color: #ff6b6b;
   margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  border: 2px solid red; /* Debugging style */
+  text-align: center; /* Centers text horizontally */
+  width: 100%; /* Ensures the title takes up the full width of its container */
 }
 .buttons {
   display: flex;
