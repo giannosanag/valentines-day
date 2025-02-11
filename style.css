@@ -51,6 +51,12 @@ body {
   text-align: center; /* Center the text */
 }
 
+@media (max-width: 600px) {
+  .title {
+    font-size: 3rem; /* Adjust font size for smaller screens */
+  }
+}
+
 .buttons {
   display: flex;
   flex-wrap: wrap;
