@@ -48,12 +48,12 @@ body {
 
 .title {
   font-family: 'Pacifico', cursive;
-  font-size: 4rem; /* Increased font size */
+  font-size: 4rem;
   color: #ff6b6b;
   margin-bottom: 20px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Optional: Add a shadow */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  border: 2px solid red; /* Debugging style */
 }
-
 .buttons {
   display: flex;
   flex-wrap: wrap;
